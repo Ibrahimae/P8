@@ -1,7 +1,8 @@
 import "./MyProjects.css";
 import WorkItem from "../WorkItem/index";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import data from "../../works.json";
 
 function MyProjects() {
     const [datas, setDatas] = useState([]);
@@ -10,14 +11,11 @@ function MyProjects() {
         threshold: 0.2,
     });
 
+
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("works.json");
-            const data = await response.json();
-            setDatas(data);
-        };
-        fetchData();
+        setDatas(data);
     }, []);
+
 
     return (
         <section
@@ -29,8 +27,8 @@ function MyProjects() {
                 <span>02. </span>Mes projets
             </h1>
             <div className="workItems">
-                {datas.map((data) => (
-                    <WorkItem key={data.id} {...data} />
+                {datas.map((item) => (
+                    <WorkItem key={item.id} {...item} />
                 ))}
             </div>
         </section>
