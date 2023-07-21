@@ -30,7 +30,7 @@ function Work() {
             <p>{work.problématique}</p>
             <h4>En détails</h4>
             <p>{work.details}</p>
-            <Link className="backToPortfolio" to={"/portfolio/"}>
+            <Link className="backToPortfolio" to={"/"}>
                 <button>Retour au portfolio</button>
             </Link>
         </main>
