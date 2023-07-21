@@ -2,7 +2,7 @@ import "./MyProjects.css";
 import WorkItem from "../WorkItem/index";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import data from "../../works.json";
+import data from "./../../works.json";
 
 function MyProjects() {
     const [datas, setDatas] = useState([]);

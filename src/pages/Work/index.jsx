@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import "./Work.css";
 import { useEffect } from "react";
 
-import datas from "../../works.json";
+import datas from "./../../works.json";
 
 function Work() {
     const { id } = useParams();
