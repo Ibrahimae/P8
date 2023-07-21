@@ -29,22 +29,22 @@ function Header() {
     return (
         <header>
             <nav className="navHeader">
-                <Link to="/portfolio/">
+                <Link to="/">
                     <img id="logo-image" src={logo} alt="logo" />
                 </Link>
                 <ul>
                     <li>
-                        <HashLink to={"/portfolio/#about"}>
+                        <HashLink to={"/#about"}>
                             <span>01. </span>À propos
                         </HashLink>
                     </li>
                     <li>
-                        <HashLink to={"/portfolio/#myProjects"}>
+                        <HashLink to={"/#myProjects"}>
                             <span>02. </span>Mes projets
                         </HashLink>
                     </li>
                     <li>
-                        <HashLink to={"/portfolio/#contact"}>
+                        <HashLink to={"/#contact"}>
                             <span>03. </span>Me contacter
                         </HashLink>
                     </li>
@@ -63,7 +63,7 @@ function Header() {
                     <ul>
                         <li>
                             <HashLink
-                                to={"/portfolio/#about"}
+                                to={"/#about"}
                                 onClick={closeMenu}
                             >
                                 <span>01.</span>
@@ -72,7 +72,7 @@ function Header() {
                         </li>
                         <li>
                             <HashLink
-                                to={"/portfolio/#myProjects"}
+                                to={"/#myProjects"}
                                 onClick={closeMenu}
                             >
                                 <span>02.</span>
@@ -82,7 +82,7 @@ function Header() {
                         </li>
                         <li>
                             <HashLink
-                                to={"/portfolio/#contact"}
+                                to={"/#contact"}
                                 onClick={closeMenu}
                             >
                                 <span>03.</span>

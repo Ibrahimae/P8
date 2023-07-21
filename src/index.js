@@ -15,9 +15,9 @@ root.render(
         <Router>
             <Header />
             <Routes>
-                <Route path="/portfolio/" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route
-                    path="/portfolio/work/:id"
+                    path="/work/:id"
                     element={<Work datas={Works} />}
                 />
             </Routes>
