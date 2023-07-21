@@ -95,7 +95,7 @@ main {
     border: var(--blue) solid 2px;
 }
 
-.backToPortfolio button:hover {
+.backTo button:hover {
     background: var(--backgroundColor);
     color: var(--blue);
 }
